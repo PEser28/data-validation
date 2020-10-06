@@ -1,0 +1,79 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Signup Page</title>
+	<link rel="stylesheet" href="style3.1.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<form class="box" action ="signup.php" method ="POST">
+	<center>
+	<img class ="logo" src="newacc.png"></a>
+	<h1 class ="header">Account Signup</h1>
+	<input type="text" name="fName" placeholder="First Name" required>
+	<br>
+	<input type="text" name="lName" placeholder="Last Name" required>
+	<br>
+	<input type="text" name="email" placeholder="Your Email" required>
+	<br>
+	<input type="password" name="" placeholder="Enter Password" id ="myInput" required>
+	<span class ="eye" onclick ="myFunction()">
+	<i id ="hide1" class="fa fa-eye"></i>
+	<i id ="hide2" class="fa fa-eye-slash"></i>
+	</span>
+	<br>
+	<input type="password" name="" placeholder="Confirm Password" id ="myInput1" required>
+	<span class ="eye" onclick ="myFunction1()">
+	<i id ="hide3" class="fa fa-eye"></i>
+	<i id ="hide4" class="fa fa-eye-slash"></i>
+	</span>
+	<br><a class="sbday">
+	I am: <select name="">
+		<option value="male">Male</option>
+		<option value="female">Female</option>
+		<option value="others">Rather not say</option>
+	</select>
+	Birthday: <input type="date">
+	<br>
+	<input type="submit" name ="sbtn"value="Sign Up" class="submit"></a>
+	<script>
+		function myFunction(){
+		var x = document.getElementById("myInput");
+		var y = document.getElementById("hide1");
+		var z = document.getElementById("hide2");
+		
+		if(x.type === 'password'){
+		x.type = "text";
+		y.style.display = "block";
+		z.style.display = "none";
+			}
+			else{
+			x.type = "password";
+			y.style.display = "none";
+			z.style.display = "block";
+			}
+		}
+		</script>
+		<script>
+		function myFunction1(){
+		var x = document.getElementById("myInput1");
+		var y = document.getElementById("hide3");
+		var z = document.getElementById("hide4");
+		
+		if(x.type === 'password'){
+		x.type = "text";
+		y.style.display = "block";
+		z.style.display = "none";
+			}
+			else{
+			x.type = "password";
+			y.style.display = "none";
+			z.style.display = "block";
+			}
+		}
+		</script>
+		</center>
+	</form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login Page</title>
+	<link rel="stylesheet" href="style2.1.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<form class="box" action="login.php" method="POST">
+	<img class ="logo" src="logo.png"></a>
+	<h1 class ="header">Account Login</h1>
+	<i class="fa fa-envelope"></i>
+	<input type="text" name="paolo" placeholder="email" required>
+	<div></div>
+	<i class="fa fa-key"></i>
+	<input type="password" name="james" placeholder="password" id ="myInput" required>
+	<span class ="eye" onclick ="myFunction()">
+	<i id ="hide1" class="fa fa-eye"></i>
+	<i id ="hide2" class="fa fa-eye-slash"></i>
+	</span>
+	<input type="submit" name="logup" value="Login" class="submit">
+	<div class ="suptxt">Don't have account?<a class ="signup" href="http://localhost/NCP3106-PJ-ESER/PRELIM%20SOFTDES/signup.html"> Sign up</a>
+	<script>
+		function myFunction(){
+		var x = document.getElementById("myInput");
+		var y = document.getElementById("hide1");
+		var z = document.getElementById("hide2");
+		
+		if(x.type === 'password'){
+		x.type = "text";
+		y.style.display = "block";
+		z.style.display = "none";
+			}
+			else{
+			x.type = "password";
+			y.style.display = "none";
+			z.style.display = "block";
+			}
+		}
+		</script>
+</form>
+</body>
+</html>
