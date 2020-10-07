@@ -60,7 +60,7 @@ body{
 	height: 150px;
 }
 .header{
-	margin-top: 100px;
+	margin-top: 90px;
 	font-size: 38px;
 }
 .fa{
@@ -68,7 +68,7 @@ body{
 }
 .eye{
 	margin-top: 18px;
-	margin-left: -40px;
+	margin-left: -25px;
 	position: absolute;
 	cursor: pointer;
 }
