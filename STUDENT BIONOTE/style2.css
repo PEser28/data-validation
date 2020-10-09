@@ -1,0 +1,44 @@
+html, body {
+
+	font-family: 'Press Start 2P', cursive;
+}
+
+.glogos{
+	width: 200px;
+	height: 120px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.glogos2{
+	width: 200px;
+	height: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.gtalogos{
+	width: 200px;
+	height: 150px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.pubglogos{
+	width: 300px;
+	height: 110px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.glogos3{
+	width: 270px;
+	height: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.contentp{
+	text-align:justify;
+	text-justify:inter-word;
+	font-size: 15px;
+	line-height: 1;
+	margin-right: 150px;
+	margin-left: 150px;
+	margin-bottom: 10px;
+}
