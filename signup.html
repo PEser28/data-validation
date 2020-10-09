@@ -11,32 +11,40 @@
 	<center>
 	<img class ="logo" src="newacc.png"></a>
 	<h1 class ="header">Account Signup</h1>
-	<input type="text" name="fName" placeholder="First Name" required>
+	Last Name<br><input type="text" name="lName" required>
 	<br>
-	<input type="text" name="lName" placeholder="Last Name" required>
+	First Name<br><input type="text" name="fName" required>
 	<br>
-	<input type="text" name="email" placeholder="Your Email" required>
+	Student Number<br><input type="text" name="stNumber" required>
 	<br>
-	<input type="password" name="" placeholder="Enter Password" id ="myInput" required>
+    <a class="sbday">
+	Year Level<select name="">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+        <option value="4">4</option>
+	</select>
+	Birth Date<input type="date">
+	<br></a>
+    Mobile Number<br><input type="text" name="mNumber" required>
+	<br>
+    UE Email Address<br><input type="text" name="ueMail" required>
+	<br>
+    Username<br><input type="text" name="userName" required>
+	<br>
+	Password<br><input type="password" name="" id ="myInput" required>
 	<span class ="eye" onclick ="myFunction()">
 	<i id ="hide1" class="fa fa-eye"></i>
 	<i id ="hide2" class="fa fa-eye-slash"></i>
 	</span>
 	<br>
-	<input type="password" name="" placeholder="Confirm Password" id ="myInput1" required>
+	Confirm Password<br><input type="password" name="" id ="myInput1" required>
 	<span class ="eye" onclick ="myFunction1()">
 	<i id ="hide3" class="fa fa-eye"></i>
 	<i id ="hide4" class="fa fa-eye-slash"></i>
 	</span>
-	<br><a class="sbday">
-	I am: <select name="">
-		<option value="male">Male</option>
-		<option value="female">Female</option>
-		<option value="others">Rather not say</option>
-	</select>
-	Birthday: <input type="date">
 	<br>
-	<input type="submit" name ="sbtn"value="Sign Up" class="submit"></a>
+	<input type="submit" name ="sbtn"value="Sign Up" class="submit">
 	<script>
 		function myFunction(){
 		var x = document.getElementById("myInput");
