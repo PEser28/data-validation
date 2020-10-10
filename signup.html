@@ -18,15 +18,15 @@
 			</div>
 	<div class="formbox">
 		<label for="Username"></label>
-		<input class="fromboxinput" style="margin-left: 55%;margin-top: -6%;"
+		<input class="fromboxinput" style="margin-left: 55%;margin-top: -6.5%;"
 		type="text" placeholder="Username" id="Username" name="Username" autocomplete="off">
 		</div>
 
 		<div class="formbox">
 			<p style="margin-left: 50px; margin-top: -10px;">First Name<p style="margin-left: 55%; margin-top: -7%">Password</p>
-	
+			
 				<br><input class="fromboxinput" style="margin-top: -40px;margin-left: 7%" type="text"
-				placeholder="First Name" id="fName" name="fName" autocomplete="off">
+				placeholder="First Name" id="fName" name="fName" autocomplete="off" maxlength="23">
 				</div>
 		<div class="formbox">
 			<label for="Password"></label>
@@ -42,35 +42,44 @@
 					</div>
 			<div class="formbox">
 				<label for="Confirm Password"></label>
-				<input class="fromboxinput" style="margin-left: 55%;margin-top: -5.5%;"
+				<input class="fromboxinput" style="margin-left: 55%;margin-top: -6%;"
 				type="password" placeholder="Confirm Password" id="cPassword" name="cPassword" autocomplete="off">
 				</div>
 
 				<div class="formbox">
-					<p style="margin-left: 50px; margin-top: -10px;">Email<p style="margin-left: 55%; margin-top: -6%">Mobile Number</p>
+					<p style="margin-left: 50px; margin-top: -7px;">Email<p style="margin-left: 55%; margin-top: -6%">Mobile Number</p>
 			
 						<br><input class="fromboxinput" style="margin-top: -45px;margin-left: 7%" type="text"
 						placeholder="Email" id="nEmail" name="nEmail" autocomplete="off">
 						</div>
 				<div class="formbox">
 					<label for="Mobile Number"></label>
-					<input class="fromboxinput" style="margin-left: 55%;margin-top: -6%;"
+					<input class="fromboxinput" style="margin-left: 55%;margin-top: -6.5%;"
 					type="text" placeholder="+63 9XXXXXXXXX" id="mNumber" name="mNumber" autocomplete="off" maxlength="11">
 					</div>
-					<div><a class="sbday">
+					<a class="sbday">
 						Year Level<br><select name=""></a>
 							<option value="1">1st Year</option>
 							<option value="2">2nd Year</option>
 							<option value="3">3rd Year</option>
 							<option value="4">4th Year</option>
 						</select><br>
-						Birth Date<br><input type="date"></div>
+						Birth Date<br><input type="date">
 
 						<div class="formbox">
-						<input type="checkbox" style="margin-top: 105px;"><p style="margin-left: 4%; margin-top: -3%">Terms and Conditions</p></div>
+						<input type="checkbox" style="margin-top: 20px;"><p style="margin-left: 4%; margin-top: -3%">Terms and Conditions</p></div>
 
 						<div><p class="lrm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+						
+						<div><input type="submit" name ="sbtn"value="Sign Up" class="submit"></div>
 
+						<p style="margin-left: 36%; margin-top: -66%">M.I</p>
 	</form>
+	
+	<form class="box1" action ="signup.php" method ="POST" id="box1">
+	<input class="fromboxinput" style="margin-left: 34%; margin-top: -1.6%;"
+	type="text" placeholder="M.I" id="mInit" name="mInit" autocomplete="off" maxlength="2">
+	</form>
+
 </body>
 </html>
