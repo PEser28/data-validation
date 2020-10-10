@@ -7,82 +7,70 @@
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-<form class="box" action ="signup.php" method ="POST">
-	<center>
+<form class="box" action ="signup.php" method ="POST" id="box">
 	<img class ="logo" src="newacc.png"></a>
 	<h1 class ="header">Account Signup</h1>
-	Last Name<br><input type="text" name="LastName" autocomplete="off" maxlength = "11" required>
-	<br>
-	First Name<br><input type="text" name="FirstName" autocomplete="off" required>
-	<br>
-	Student Number<br><input type="text" name="stNumber" autocomplete="off" required>
-	<br>
-    <a class="sbday">
-	Year Level<select name="">
-		<option value="1">1st Year</option>
-		<option value="2">2nd Year</option>
-		<option value="3">3rd Year</option>
-        <option value="4">4th Year</option>
-	</select>
-	Birth Date<input type="date">
-	<br></a>
-    Mobile Number<br><input type="text" name="mNumber" autocomplete="off" required>
-	<br>
-    UE Email Address<br><input type="text" name="ueMail" autocomplete="off" required>
-	<br>
-    Username<br><input type="text" name="userName" autocomplete="off" required>
-	<br>
-	Password<br><input type="password" name="pass" id="myInput"  autocomplete="off" required>
-	<span class ="eye" onclick ="myFunction()">
-	<i id ="hide1" class="fa fa-eye"></i>
-	<i id ="hide2" class="fa fa-eye-slash"></i>
-	</span>
-	<br>
-	Confirm Password<br><input type="password" name="re-pass"  id="myInput1" autocomplete="off" required>
-	<span class ="eye" onclick ="myFunction1()">
-	<i id ="hide3" class="fa fa-eye"></i>
-	<i id ="hide4" class="fa fa-eye-slash"></i>
-	</span>
-	<br>
-	<input type="hidden" name="SubmitCheck1" value="sent">
-	<input type="submit" name ="sbtn"value="Sign Up" class="submit">
-	<script>
-		function myFunction(){
-		var x = document.getElementById("myInput");
-		var y = document.getElementById("hide1");
-		var z = document.getElementById("hide2");
+	<div class="formbox">
+		<p style="margin-left: 50px;">Last Name<p style="margin-left: 55%; margin-top: -7%">Username</p>
+
+			<br><input class="fromboxinput" style="margin-top: -40px;margin-left: 7%" type="text"
+			placeholder="Last Name" id="lName" name="lName" autocomplete="off">
+			</div>
+	<div class="formbox">
+		<label for="Username"></label>
+		<input class="fromboxinput" style="margin-left: 55%;margin-top: -6%;"
+		type="text" placeholder="Username" id="Username" name="Username" autocomplete="off">
+		</div>
+
+		<div class="formbox">
+			<p style="margin-left: 50px; margin-top: -10px;">First Name<p style="margin-left: 55%; margin-top: -7%">Password</p>
+	
+				<br><input class="fromboxinput" style="margin-top: -40px;margin-left: 7%" type="text"
+				placeholder="First Name" id="fName" name="fName" autocomplete="off">
+				</div>
+		<div class="formbox">
+			<label for="Password"></label>
+			<input class="fromboxinput" style="margin-left: 55%;margin-top: -6%;"
+			type="password" placeholder="Password" id="Password" name="Password" autocomplete="off">
+			</div>
+
+			<div class="formbox">
+				<p style="margin-left: 50px; margin-top: -10px;">Student Number<p style="margin-left: 55%; margin-top: -7%">Confirm Password</p>
 		
-		if(x.type === 'password'){
-		x.type = "text";
-		y.style.display = "block";
-		z.style.display = "none";
-			}
-			else{
-			x.type = "password";
-			y.style.display = "none";
-			z.style.display = "block";
-			}
-		}
-		</script>
-		<script>
-		function myFunction1(){
-		var x = document.getElementById("myInput1");
-		var y = document.getElementById("hide3");
-		var z = document.getElementById("hide4");
-		
-		if(x.type === 'password'){
-		x.type = "text";
-		y.style.display = "block";
-		z.style.display = "none";
-			}
-			else{
-			x.type = "password";
-			y.style.display = "none";
-			z.style.display = "block";
-			}
-		}
-		</script>
-		</center>
+					<br><input class="fromboxinput" style="margin-top: -40px;margin-left: 7%" type="text"
+					placeholder="Student Number" id="stNumber" name="stNumber" autocomplete="off" maxlength="11">
+					</div>
+			<div class="formbox">
+				<label for="Confirm Password"></label>
+				<input class="fromboxinput" style="margin-left: 55%;margin-top: -5.5%;"
+				type="password" placeholder="Confirm Password" id="cPassword" name="cPassword" autocomplete="off">
+				</div>
+
+				<div class="formbox">
+					<p style="margin-left: 50px; margin-top: -10px;">Email<p style="margin-left: 55%; margin-top: -6%">Mobile Number</p>
+			
+						<br><input class="fromboxinput" style="margin-top: -45px;margin-left: 7%" type="text"
+						placeholder="Email" id="nEmail" name="nEmail" autocomplete="off">
+						</div>
+				<div class="formbox">
+					<label for="Mobile Number"></label>
+					<input class="fromboxinput" style="margin-left: 55%;margin-top: -6%;"
+					type="text" placeholder="+63 9XXXXXXXXX" id="mNumber" name="mNumber" autocomplete="off" maxlength="11">
+					</div>
+					<div><a class="sbday">
+						Year Level<br><select name=""></a>
+							<option value="1">1st Year</option>
+							<option value="2">2nd Year</option>
+							<option value="3">3rd Year</option>
+							<option value="4">4th Year</option>
+						</select><br>
+						Birth Date<br><input type="date"></div>
+
+						<div class="formbox">
+						<input type="checkbox" style="margin-top: 105px;"><p style="margin-left: 4%; margin-top: -3%">Terms and Conditions</p></div>
+
+						<div><p class="lrm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+
 	</form>
 </body>
 </html>
