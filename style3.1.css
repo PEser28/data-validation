@@ -47,8 +47,8 @@ body{
 	font-family: 'DM Sans', sans-serif;
 }
 .eye{
-	margin-top: 5px;
-	margin-left: -40px;
+	margin-top: 8px;
+	margin-left: -35px;
 	position: absolute;
 	cursor: pointer;
 }
