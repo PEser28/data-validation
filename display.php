@@ -18,7 +18,7 @@
 	<h1>Hello!</h1>
 	<h2><?php echo $_SESSION['FirstName']; echo " "; echo $_SESSION['LastName']; ?></h2>
 	<h3>Your email is: <br></h3>
-	<h2><?php echo $_SESSION['E-mail'];?></h2>
+	<h2><?php echo $_SESSION['userName'];?></h2>
 </div>
 </body>
 </html>

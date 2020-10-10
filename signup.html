@@ -11,9 +11,9 @@
 	<center>
 	<img class ="logo" src="newacc.png"></a>
 	<h1 class ="header">Account Signup</h1>
-	Last Name<br><input type="text" name="lName" autocomplete="off" required>
+	Last Name<br><input type="text" name="LastName" autocomplete="off" maxlength = "11" required>
 	<br>
-	First Name<br><input type="text" name="fName" autocomplete="off" required>
+	First Name<br><input type="text" name="FirstName" autocomplete="off" required>
 	<br>
 	Student Number<br><input type="text" name="stNumber" autocomplete="off" required>
 	<br>
@@ -32,18 +32,19 @@
 	<br>
     Username<br><input type="text" name="userName" autocomplete="off" required>
 	<br>
-	Password<br><input type="password" name="" id ="myInput" autocomplete="off" required>
+	Password<br><input type="password" name="pass"  autocomplete="off" required>
 	<span class ="eye" onclick ="myFunction()">
 	<i id ="hide1" class="fa fa-eye"></i>
 	<i id ="hide2" class="fa fa-eye-slash"></i>
 	</span>
 	<br>
-	Confirm Password<br><input type="password" name="" id ="myInput1" autocomplete="off" required>
+	Confirm Password<br><input type="password" name="re-pass"  autocomplete="off" required>
 	<span class ="eye" onclick ="myFunction1()">
 	<i id ="hide3" class="fa fa-eye"></i>
 	<i id ="hide4" class="fa fa-eye-slash"></i>
 	</span>
 	<br>
+	<input type="hidden" name="SubmitCheck1" value="sent">
 	<input type="submit" name ="sbtn"value="Sign Up" class="submit">
 	<script>
 		function myFunction(){
