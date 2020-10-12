@@ -149,7 +149,7 @@ function myFunction() {
     }
     setSuccessFor(mNumb);
 } else {
-    setErrorFor(mNumb, 'Mobile number must start with +63');
+    setErrorFor(mNum, 'Mobile number must start with +63');
     return false;
 }
 
