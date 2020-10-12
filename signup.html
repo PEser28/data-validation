@@ -3,83 +3,125 @@
 	<meta charset="utf-8">
 	<title>Signup Page</title>
 	<link rel="stylesheet" href="style3.1.css">
+	<script src="valid.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-<form class="box" action ="signup.php" method ="POST" id="box">
+
+<form class="box" action ="Regis.php" method ="POST" id="box" >
 	<img class ="logo" src="newacc.png"></a>
 	<h1 class ="header">Account Signup</h1>
-	<div class="formbox">
-		<p style="margin-left: 50px;">Last Name<p style="margin-left: 55%; margin-top: -7%">Username</p>
+	<br> 
 
-			<br><input class="fromboxinput" style="margin-top: -40px;margin-left: 7%" type="text"
-			placeholder="Last Name" id="lName" name="lName" autocomplete="off">
-			</div>
-	<div class="formbox">
-		<label for="Username"></label>
-		<input class="fromboxinput" style="margin-left: 55%;margin-top: -6.5%;"
-		type="text" placeholder="Username" id="Username" name="Username" autocomplete="off">
-		</div>
-
-		<div class="formbox">
-			<p style="margin-left: 50px; margin-top: -10px;">First Name<p style="margin-left: 55%; margin-top: -7%">Password</p>
+	
+<!-- LAST NAME _ USERNAME _ --> 
 			
-				<br><input class="fromboxinput" style="margin-top: -40px;margin-left: 7%" type="text"
-				placeholder="First Name" id="fName" name="fName" autocomplete="off" maxlength="23">
-				</div>
-		<div class="formbox">
+			<p style="margin-left: 50px;">Last Name<p style="margin-left: 55%; margin-top: -7%">Username</p>
+			
+<!-- LAST Textbox -->			
+			<div class="form-control">
+			<br><input class="fromboxinput" style="margin-top: -40px;margin-left: 16%" type="text"
+			placeholder="Last Name" id="lastNameinput" name="lastNameinput" autocomplete="off">
+			<small style= " margin-left: -120%; font-size: 10px; margin-bottom: 5px;">Error message</small>
+			</div>	
+<!-- USER Textbox -->		
+	
+			<div class="form-control">
+			<input class="fromboxinput" style="margin-left: 130%;margin-top: -15px;" 
+			type="text" placeholder="Username" id="usernameinput" name="usernameinput" autocomplete="off">
+			<small style="margin-left: 0%;font-size: 10px; margin-bottom: -5px">Error message</small>
+			</div>
+	
+<!-- FIRST _ MI _ PASSWORD -->
+	
+			<p style="margin-left: 50px; margin-top: 10%;">First Name <p style="margin-left: 42%; margin-top: -6%">M.I <p style="margin-left: 55%; margin-top: -7%">Password</p>
+			
+<!-- FIRST Textbox -->
+
+			<div class="form-control">
+			<br><input class="fromboxinput" style="margin-top: -40px;margin-left: 23%; width: 200px;" type="text"
+			placeholder="First Name" id="firstnameinput" name="firstnameinput" autocomplete="off" >
+			<small style= " margin-left: -160%; font-size: 10px; margin-bottom: 5px;">Error message</small>
+			</div>
+			
+				
+			
+<!-- MI Textbox -->	
+			<div class="form-control">		
+			<br><input class="fromboxinput" style="margin-top: -39px;margin-left: 414%; width: 50px;" type="text"
+			placeholder="M.I" id="miInput" name="miInput" autocomplete="off" maxlength="2">
+			<small style= " margin-left: -20%; font-size: 10px; margin-bottom: 5px;">Error message</small>
+			</div>
+			
+<!-- PASSWORD Textbox -->
+			
+			<div class="form-control">			
 			<label for="Password"></label>
-			<input class="fromboxinput" style="margin-left: 55%;margin-top: -6%;"
+			<input class="fromboxinput" style="margin-left: 130%;margin-top: -7%;"
 			type="password" placeholder="Password" id="Password" name="Password" autocomplete="off">
+			<small style= " margin-left: 20%; font-size: 10px; margin-bottom: 5px;">Error message</small>
 			</div>
 
-			<div class="formbox">
-				<p style="margin-left: 50px; margin-top: -10px;">Student Number<p style="margin-left: 55%; margin-top: -7%">Confirm Password</p>
-		
-					<br><input class="fromboxinput" style="margin-top: -40px;margin-left: 7%" type="text"
-					placeholder="Student Number" id="stNumber" name="stNumber" autocomplete="off" maxlength="11">
-					</div>
-			<div class="formbox">
-				<label for="Confirm Password"></label>
-				<input class="fromboxinput" style="margin-left: 55%;margin-top: -6%;"
-				type="password" placeholder="Confirm Password" id="cPassword" name="cPassword" autocomplete="off">
-				</div>
+<!-- ST_CPASS -->				
+			<p style="margin-left: 50px; margin-top: 10%;">Student Number<p style="margin-left: 55%; margin-top: -7%">Confirm Password</p>
 
-				<div class="formbox">
-					<p style="margin-left: 50px; margin-top: -7px;">Email<p style="margin-left: 55%; margin-top: -6%">Mobile Number</p>
+<!-- ST Textbox -->				
+			<div class="form-control">	
+			<br><input class="fromboxinput" style="margin-top: -40px;margin-left: 15%" type="text"
+			placeholder="Student Number" id="stNumber" name="stNumber" autocomplete="off" maxlength="11">
+			<small style= " margin-left: -100%; font-size: 10px; margin-bottom: 5px;">Error message</small>
+			</div>
+					
+<!-- CP Textbox -->		
+			<div class="form-control">	
+			<label for="Confirm Password"></label>
+			<input class="fromboxinput" style="margin-left: 130%;margin-top: -7%;"
+			type="password" placeholder="Confirm Password" id="cPassword" name="cPassword" autocomplete="off">
+			<small style= " margin-left: 20%; font-size: 10px; margin-bottom: 5px;">Error message</small>
+			</div>
+
+				
+
+<!-- EMAIL MOBILE -->						
+			<p style="margin-left: 50px; margin-top: 10%;">Email<p style="margin-left: 55%; margin-top: -6.5%">Mobile Number</p>
 			
-						<br><input class="fromboxinput" style="margin-top: -45px;margin-left: 7%" type="text"
-						placeholder="Email" id="nEmail" name="nEmail" autocomplete="off">
-						</div>
-				<div class="formbox">
-					<label for="Mobile Number"></label>
-					<input class="fromboxinput" style="margin-left: 55%;margin-top: -6.5%;"
-					type="text" placeholder="+63 9XXXXXXXXX" id="mNumber" name="mNumber" autocomplete="off" maxlength="11">
-					</div>
-					<a class="sbday">
-						Year Level<br><select name=""></a>
+<!-- email Textbox -->	
+
+			<div class="form-control">	
+			<br><input class="fromboxinput" style="margin-top: -45px;margin-left: 15%" type="text"
+			placeholder="Email" id="nEmail" name="nEmail" autocomplete="off">
+			<small style= " margin-left: -20%; font-size: 10px; margin-bottom: 5px;">Error message</small>
+			</div>
+						
+<!-- phone Textbox -->		
+
+			<div class="form-control">	
+			<label for="Mobile Number"></label>
+			<input class="fromboxinput" style="margin-left: 130%;margin-top: -7.5%;"
+			type="text" placeholder="+63 9XXXXXXXXX" id="mNumber" name="mNumber" autocomplete="off">
+			<small style= " margin-left: -20%; font-size: 10px; margin-bottom: 5px;">Error message</small>
+			</div>
+					
+					
+<!-- year Textbox -->		
+			<p style="margin-left: 50px; margin-top: 8.5%;">Level <p style="margin-left: 30%; margin-top: -6%">Birth Date</p>
+						<select name="level"style="margin-top: -1px;margin-left: 7%" id = "level" > 
 							<option value="1">1st Year</option>
 							<option value="2">2nd Year</option>
 							<option value="3">3rd Year</option>
 							<option value="4">4th Year</option>
-						</select><br>
-						Birth Date<br><input type="date">
+						</select>
+						<input type="date" style="margin-left: 50px; margin-top: -7px;" id = "birth" name = "birth" >
 
 						<div class="formbox">
-						<input type="checkbox" style="margin-top: 20px;"><p style="margin-left: 4%; margin-top: -3%">Terms and Conditions</p></div>
-
-						<div><p class="lrm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-						
-						<div><input type="submit" name ="sbtn"value="Sign Up" class="submit"></div>
-
-						<p style="margin-left: 36%; margin-top: -66%">M.I</p>
-	</form>
+							<input style = "margin-left: 5%; margin-top: 20px; "type="checkbox" style="margin-top: 20px;"><p style="margin-left: 9%; margin-top: -3%">Terms and Conditions</p></div>
 	
-	<form class="box1" action ="signup.php" method ="POST" id="box1">
-	<input class="fromboxinput" style="margin-left: 34%; margin-top: -1.6%;"
-	type="text" placeholder="M.I" id="mInit" name="mInit" autocomplete="off" maxlength="2">
+							<div><p class="lrm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+	
+							<div><input type="submit" name ="sbtn"value="Sign Up" class="submit"style = "margin-left: 22%; "></div>
 	</form>
+
 
 </body>
 </html>
