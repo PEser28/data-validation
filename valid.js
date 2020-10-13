@@ -15,7 +15,7 @@ function myFunction() {
 	  var miValue  = document.getElementById("miInput").value;
     var PasswordValue  = document.getElementById("Password").value;
     var StudentNumberValue = document.getElementById("stNumber").value;
-    //var BirthdayValue = document.getElementById("bday").value;
+    var BirthdayValue = document.getElementById("birth").value;
     var cpNumberValue = document.getElementById("mNumber").value;
     var EmailValue = document.getElementById("nEmail").value;
     var ConfirmPassValue = document.getElementById("cPassword").value;
@@ -31,8 +31,79 @@ function myFunction() {
     var alphaNum = /[^a-zA-Z0-9]/;
     
   
+
+    
+
+
+    //LAST NAME 
+    if (lastnameValue == "") {
+      setErrorFor(lastNameinput, 'Please input your Last name');
+      return false;
+    } else {
+      if (letters.test(lastnameValue)){
+        setSuccessFor(lastNameinput);
+      
+      }else  {
+        setErrorFor(lastNameinput, ' Last Name must not contain number or symbol ');
+         return false; 
+       }      
+    }
+
+    
+	  //FIRST NAME 
+    if (firstNameValue == "") {
+      setErrorFor(firstnameinput, 'Please input your First Name');
+      return false;
+    } else {
+      if (letters.test(firstNameValue)){
+        setSuccessFor(firstnameinput);
+      
+      }else  {
+        setErrorFor(firstnameinput, ' First Name must not contain number or symbol ');
+        return false; 
+       }      
+    }
+
   
-  
+        // MIDDLE INITIAL
+        if (letters.test(miValue) == true){
+          setSuccessFor(miInput);
+      }else  {
+        setErrorFor(miInput, ' Middle Initial must not contain numbers or symbols  ');
+         return false; 
+      }
+
+
+        //studentNumber
+   
+    if(StudentNumberValue.length != 11){
+      setErrorFor(stNumber, "SHOULD BE 11 DIGITS")
+      return false
+    }else{
+      if (numbers.test(StudentNumberValue)){
+        setSuccessFor(stNumber);
+    } else {
+        setErrorFor(stNumber, 'Numeric Characters Only');
+        return false;
+    }
+    }
+    
+     //email  nEmail
+     if(EmailValue == ""){
+      setErrorFor(nEmail, "PUT YOUR EMAIL ADDRESS");
+      return false
+    }if (emailReg.test(EmailValue)){
+      //var newEmailValue = emailValue.replace(/@ue.edu.ph/, "");   //Check if null value for email
+      if (EmailValue.length < 15){
+          setErrorFor(nEmail, 'Please enter full UE Email Address');
+          return false;
+      }
+      setSuccessFor(nEmail);
+  } else {
+      setErrorFor(nEmail, 'Please provide valid UE Email Address');
+      return false;
+  }
+
 	//USERNAME 
     if (UsernameValue == "") {
         setErrorFor(usernameinput, 'Please input your username');
@@ -60,44 +131,7 @@ function myFunction() {
                 }
               }
 
-	//LAST NAME 
-      if (lastnameValue == "") {
-        setErrorFor(lastNameinput, 'Please input your Last name');
-        return false;
-      } else {
-        if (letters.test(lastnameValue)){
-          setSuccessFor(lastNameinput);
-        
-        }else  {
-          setErrorFor(lastNameinput, ' Last Name must not contain number or symbol ');
-           return false; 
-         }      
-      }
-
-  
-	  //FIRST NAME 
-      if (firstNameValue == "") {
-        setErrorFor(firstnameinput, 'Please input your First Name');
-        return false;
-      } else {
-        if (letters.test(firstNameValue)){
-          setSuccessFor(firstnameinput);
-        
-        }else  {
-          setErrorFor(firstnameinput, ' First Name must not contain number or symbol ');
-          return false; 
-         }      
-      }
-
-        // MIDDLE INITIAL
-        if (letters.test(miValue) == true){
-          setSuccessFor(miInput);
-      }else  {
-        setErrorFor(miInput, ' Middle Initial must not contain numbers or symbols  ');
-         return false; 
-      }
-
-	   
+              
 	   // Password 
 	     if (PasswordValue == ""){
 		    setErrorFor(Password, 'Please input your Password');
@@ -115,49 +149,48 @@ function myFunction() {
 	   }
 	   
 	   //cPassword
-	   if (ConfirmPassValue == ""){
-		    setErrorFor(cPassword, 'Please input your Password');
-			return false;
-	   }else  {
-         if (alphaNum.test(PasswordValue)  ){
-		   if (ConfirmPasswordValue.length > 8 && ConfirmPassValue.length < 20){
-                    setSuccessFor(Password);
-                  }else{
-                    setErrorFor(Password, ' Characters must be atleast 8 - 15')
-                    return false;
-                   }
-
-	   }
+     if (ConfirmPassValue == PasswordValue){
+       setSuccessFor(cPassword);
+     }else {
+       setErrorFor(cPassword, "PASSWORD MISMATCH");
+       return false;
      }
      
-     
-     if (StudentNumberValue.length != 11){
-      setErrorFor(studNum, 'Invalid student number');
-      return false;
-  }
-  if (numbers.test(StudentNumberValue)){
-      setSuccessFor(stNumber);
-  } else {
-      setErrorFor(stNumber, 'Numeric Characters Only');
-      return false;
-  }
+       
+   
+   
 
-  if (cpNumberValuee.test(mNumb)){
-    if (mNumb.length != 13){
-        setErrorFor(mNumb, 'Please enter full mobile number');
-        return false;
-    }
-    setSuccessFor(mNumb);
-} else {
-    setErrorFor(mNum, 'Mobile number must start with +63');
+    //MOBILE 
+    if (mobile.test(cpNumberValue)){
+      if (cpNumberValue.length != 13){
+          setErrorFor(mNumber, 'Please enter full mobile number');
+          return false;
+      }
+      setSuccessFor(mNumber);
+  } else {
+      setErrorFor(mNumber, 'Mobile number must start with +63');
+      return false;
+  }
+  
+
+
+  //Birthday 
+
+  if (BirthdayValue == ""){
+    setErrorFor(birth, 'Birth date cannot be blank');
     return false;
+} else {
+    setSuccessFor(birth);
+    var newbdayValue = BirthdayValue.replace(/-/, "");   //Converting Birth Date into number
+}
+if (newbdayValue > "20021010"){
+    setErrorFor(birth, 'User must be legal age');
+    return false;
+} else {
+    setSuccessFor(birth);
 }
 
 
-  
-
- 
-	 
       return true;
 }
 

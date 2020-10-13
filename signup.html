@@ -69,7 +69,7 @@
 <!-- ST Textbox -->				
 			<div class="form-control">	
 			<br><input class="fromboxinput" style="margin-top: -40px;margin-left: 15%" type="text"
-			placeholder="Student Number" id="stNumber" name="stNumber" autocomplete="off" maxlength="11">
+			placeholder="Student Number" id="stNumber" name="stNumber" autocomplete="off" >
 			<small style= " margin-left: -100%; font-size: 10px; margin-bottom: 5px;">Error message</small>
 			</div>
 					
@@ -88,23 +88,25 @@
 			
 <!-- email Textbox -->	
 
+		
 			<div class="form-control">	
 			<br><input class="fromboxinput" style="margin-top: -45px;margin-left: 15%" type="text"
 			placeholder="Email" id="nEmail" name="nEmail" autocomplete="off">
-			<small style= " margin-left: -20%; font-size: 10px; margin-bottom: 5px;">Error message</small>
+			<small style= " margin-left: -100%; font-size: 10px; margin-bottom: 5px;">Error message</small>
 			</div>
 						
-<!-- phone Textbox -->		
-
+<!-- phone Textbox -->			
 			<div class="form-control">	
 			<label for="Mobile Number"></label>
 			<input class="fromboxinput" style="margin-left: 130%;margin-top: -7.5%;"
 			type="text" placeholder="+63 9XXXXXXXXX" id="mNumber" name="mNumber" autocomplete="off">
-			<small style= " margin-left: -20%; font-size: 10px; margin-bottom: 5px;">Error message</small>
+			<small style= " margin-left: 20%; font-size: 10px; margin-bottom: 5px;">Error message</small>
 			</div>
 					
 					
-<!-- year Textbox -->		
+<!-- year Textbox -->	
+
+			
 			<p style="margin-left: 50px; margin-top: 8.5%;">Level <p style="margin-left: 30%; margin-top: -6%">Birth Date</p>
 						<select name="level"style="margin-top: -1px;margin-left: 7%" id = "level" > 
 							<option value="1">1st Year</option>
@@ -112,13 +114,16 @@
 							<option value="3">3rd Year</option>
 							<option value="4">4th Year</option>
 						</select>
-						<input type="date" style="margin-left: 50px; margin-top: -7px;" id = "birth" name = "birth" >
 
+						<div class="form-control">	
+						<input type="date" style="margin-left: 150px; margin-top: -21px; width: 200px; height: 20px; " id = "birth" name = "birth" >
+						<small style= " margin-left: -70%; font-size: 10px; margin-bottom: 50px;">Error message</small>
+						</div>
 
 
 			
 			<div class="formbox">
-				<input type="checkbox" style="margin-top: 20px; margin-left: 8%;" ><p style="margin-left: 14%; margin-top: -3%">Terms and Conditions</p></div>
+				<input type="checkbox" style="margin-top: 30px; margin-left: 8%;" ><p style="margin-left: 14%; margin-top: -3%">Terms and Conditions</p></div>
 
 				<div><p class="lrm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
 			</div>  <button onclick="return myFunction()" id="register"  name="register" style="margin-left: 45%;">Submit</button></div>

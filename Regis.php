@@ -14,7 +14,7 @@ $birth = $_POST['birth'];
 
 
 if ($Password == $cPassword ) {
-		insertRecord($lastNameinput,$firstnameinput,$usernameinput,$miInput,$Password,$stNumber,$cPassword,$nEmail,$mNumber,$level,$birth);
+		insertRecord($lastNameinput,$firstnameinput,$usernameinput,$miInput,$Password,$stNumber,$nEmail,$mNumber,$level,$birth);
        
 	}
 	else {
@@ -32,15 +32,15 @@ if ($Password == $cPassword ) {
 
 
 
-function insertRecord($lastNameinput,$firstnameinput,$usernameinput,$miInput,$Password,$stNumber,$cPassword,$nEmail,$mNumber,$level,$birth) {
+function insertRecord($lastNameinput,$firstnameinput,$usernameinput,$miInput,$Password,$stNumber,$nEmail,$mNumber,$level,$birth) {
  try {
  require 'OPENDATA.php';
      
-  $sql = "INSERT INTO datas (lastNameinput,firstnameinput,usernameinput,miInput,Password,stNumber,cPassword,nEmail,mNumber,level,birth) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
+  $sql = "INSERT INTO data2 (lastNameinput,firstnameinput,usernameinput,miInput,Password,stNumber,nEmail,mNumber,level,birth) VALUES (?,?,?,?,?,?,?,?,?,?)";
      
      
   // use exec() because no results are returned 
-     $conn->prepare($sql)->execute([$lastNameinput,$firstnameinput,$usernameinput,$miInput,$Password,$stNumber,$cPassword,$nEmail,$mNumber,$level,$birth]);
+     $conn->prepare($sql)->execute([$lastNameinput,$firstnameinput,$usernameinput,$miInput,$Password,$stNumber,$nEmail,$mNumber,$level,$birth]);
 
 
   echo '<script>
